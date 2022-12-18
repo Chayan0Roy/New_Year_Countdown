@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(./assets/happy_New_Year.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.year {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px 8px black;
+}
+
+.countdown {
+    margin: 30px;
+    background: rgba(0, 0, 0, .8);
+    width: 100%;
+    color: #fff;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.countdown div {
+    position: relative;
+    margin: 0 15px;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: -25px;
+    text-align: center;
+    width: 100px;
+}
+
+.countdown div::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    font-size: 0.40em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    width: 100%;
+    height: 35px;
+}
+
+.countdown .day::before {
+    content: 'days';
+}
+.countdown .hour::before {
+    content: 'hours';
+}
+.countdown .minute::before {
+    content: 'minute';
+}
+.countdown .second::before {
+    content: 'second';
+}
